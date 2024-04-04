@@ -1,0 +1,178 @@
+html {
+    min-height: 100%;
+    background-color: #333;
+    color: #fff;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 2em auto;
+}
+h1 {
+    text-align: center;
+    margin: 0.5em 0;
+    color: chartreuse;
+}
+h3 {
+    text-align: center;
+    margin: 0;
+    color: chartreuse;
+}
+
+a {
+    text-decoration: none;
+}
+
+.article-title {
+    color: lime;
+}
+
+ul {
+    padding-left: 0.5em;
+    margin: auto;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0.5em 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    margin-top: 0.5em;
+}
+th, td {
+    text-align: center;
+    padding: 2px;
+}
+th {
+    border: 1px solid #000;
+}
+
+button, .btn-like {
+    margin: auto 0.5em;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    box-shadow: 0 0 0 0px #000;
+}
+.btn-like {
+    background-color: #fff;
+    color: #000;
+}
+.btn-left {
+    float: left;
+}
+.btn-right {
+    float: right;
+}
+.btn-red {
+    background-color: #ff0000;
+}
+.btn-green {
+    background-color: #00ff00;
+}
+.btn-blue {
+    background-color: #00aae4;
+}
+.btn-yellow {
+    background-color: #ffff00;
+}
+.btn-orange {
+    background-color: #ff7f00;
+}
+
+.button-span {
+    margin: 0;
+}
+
+.edit-label {
+    font-size: 20px;
+}
+
+#utm-source-box {
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 6em auto 1em auto;
+}
+
+#new-name-div {
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+#custom-utm-source {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#article-detail {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#create-article-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+#veil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
+#page-number {
+    text-align: center;
+}
+
+#content {
+    margin: 0.5em 0;
+    width: 100%;
+    height: 350px;
+    font: 18px Georgia, Garamond, Serif;
+}
+
+#name-edit {
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#name-input {
+    margin: 0.5em;
+    width: 70%;
+    height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#name-input:focus {
+    outline: none;
+}

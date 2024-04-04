@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filip Hasoň">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Article detail</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="/~80697138/cms/assets/detail.js"></script>
+</head>
+<body>
+<h1>{ARTICLE_NAME}</h1>
+<div id="article-detail">
+<p>
+    {ARTICLE_CONTENT}
+</p>
+</div>
+
+<a href="/~80697138/cms/articles" class="btn-like btn-left">Back to articles</a>
+<a href="/~80697138/cms/article-edit/{ARTICLE_ID}" class="btn-like btn-orange btn-right">Edit</a>
+
+<div id="utm-source-box">
+    <h3>UTM Source</h3>
+    <table>
+        <th>utm_source</th>
+        <th>count</th>
+        {UTM_SOURCE}
+    </table>
+    <hr>
+    <label for="custom-utm-source">Enter UTM Source:</label> <br>
+    <input type="text" id="custom-utm-source" maxlength="64" pattern="[a-z0-9]+"> <br>
+    Your link: <br>
+    <a id="link-utm-source" href="/~80697138/cms/articles/{ARTICLE_ID}?">{ARTICLE_NAME}</a>
+</div>
+</body>
+</html>

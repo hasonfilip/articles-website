@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filip Hasoň">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Articles</title>
+    <link rel="stylesheet" href="/~80697138/cms/assets/style.css">
+    <script src="/~80697138/cms/assets/articles.js"></script>
+    <script>let articles = {ARTICLES_OBJECT};</script>
+</head>
+<body>
+    <h1>Article list</h1>
+    <hr />
+    <ul id="articles">
+    </ul>
+    <hr />
+    <button id="prev-button" class="btn-left">Previous</button>
+    <button id="next-button" class="btn-left">Next</button>
+    <button id="create-button" class="btn-right btn-blue">Create article</button>
+    <br />
+    <div id="page-number"></div>
+    <div id="create-article-form">
+        <form method="post">
+            <h3>Create new article</h3>
+            <div id="new-name-div">
+                <label for="name-input">Name:</label>
+                <input type="text" name="name" id="name-input" maxlength="32" required>
+            </div>
+            <button id="submit-button" type="submit" class="btn-right btn-blue">Create</button>
+            <button id="cancel-button" type="button" class="btn-left btn-red">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>

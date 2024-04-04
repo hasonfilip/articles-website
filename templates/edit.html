@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Filip Hasoň">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit article</title>
+    <link rel="stylesheet" href="/~80697138/cms/assets/style.css">
+    <script src="/~80697138/cms/assets/edit.js"></script>
+</head>
+<h1>Edit article</h1>
+<form method="post"> <!-- Since html form doesn't provide for PUT method -->
+    <input type="hidden" name="id" value="{ARTICLE_ID}">
+    <label for="name-edit" class="edit-label">Name</label> <br />
+    <input type="text" name="name" id="name-edit" maxlength="32" required value="{ARTICLE_NAME}"> <br />
+    <label for="content" class="edit-label">Content</label> <br />
+    <textarea name="content" id="content" maxlength="1024">{ARTICLE_CONTENT}</textarea> <br />
+    <a href="/~80697138/cms/articles" class="btn-like btn-left btn-red">Back to articles</a>
+    <button type="submit" class="btn-right btn-green" id="save-btn">Save</button>
+</form>
+</html>
